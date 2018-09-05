@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import VPKit
 
 @objc protocol SKDetectingImageViewDelegate {
     func handleImageViewSingleTap(_ touchPoint: CGPoint)
     func handleImageViewDoubleTap(_ touchPoint: CGPoint)
 }
 
-class SKDetectingImageView: UIImageView {
-    weak var delegate: SKDetectingImageViewDelegate?
+class SKDetectingImageView: VPKPreview {
+    weak var skdelegate: SKDetectingImageViewDelegate?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -27,11 +28,11 @@ class SKDetectingImageView: UIImageView {
     }
     
     @objc func handleDoubleTap(_ recognizer: UITapGestureRecognizer) {
-        delegate?.handleImageViewDoubleTap(recognizer.location(in: self))
+        skdelegate?.handleImageViewDoubleTap(recognizer.location(in: self))
     }
     
     @objc func handleSingleTap(_ recognizer: UITapGestureRecognizer) {
-        delegate?.handleImageViewSingleTap(recognizer.location(in: self))
+        skdelegate?.handleImageViewSingleTap(recognizer.location(in: self))
     }
 }
 
