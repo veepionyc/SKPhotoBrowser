@@ -11,5 +11,7 @@ Pod::Spec.new do |s|
   s.resources           = "SKPhotoBrowser/SKPhotoBrowser.bundle"
   s.requires_arc        = true
   s.frameworks          = "UIKit"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0'     
+  s.dependency 'VPKit', '2.6.3'
+
 end

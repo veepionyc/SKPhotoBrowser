@@ -12,6 +12,7 @@
 		26C97AD51D0EB6870039F6CB /* SKCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C97AD41D0EB6870039F6CB /* SKCache.swift */; };
 		26C97AD71D0EB6A00039F6CB /* SKCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C97AD61D0EB6A00039F6CB /* SKCacheTests.swift */; };
 		26C97AD91D0EB8BB0039F6CB /* SKCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C97AD81D0EB8BB0039F6CB /* SKCacheable.swift */; };
+		3FB31FCCBE118E5C22F51940 /* Pods_SKPhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9E3EDFA5801613BCF732F3 /* Pods_SKPhotoBrowser.framework */; };
 		7643F4B41FE8CE7A00475F6E /* SKActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643F4B31FE8CE7A00475F6E /* SKActionView.swift */; };
 		7643F4B61FE9F42F00475F6E /* SKPaginationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643F4B51FE9F42F00475F6E /* SKPaginationView.swift */; };
 		7643F4B91FEA4FCF00475F6E /* SKToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643F4B81FEA4FCF00475F6E /* SKToolbar.swift */; };
@@ -52,6 +53,9 @@
 		26C97AD41D0EB6870039F6CB /* SKCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCache.swift; sourceTree = "<group>"; };
 		26C97AD61D0EB6A00039F6CB /* SKCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCacheTests.swift; sourceTree = "<group>"; };
 		26C97AD81D0EB8BB0039F6CB /* SKCacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCacheable.swift; sourceTree = "<group>"; };
+		3080ECCCE684D9E86CBCD28F /* Pods-SKPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKPhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKPhotoBrowser/Pods-SKPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		4D9E3EDFA5801613BCF732F3 /* Pods_SKPhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKPhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		530656635D5ED077EB347446 /* Pods-SKPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKPhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKPhotoBrowser/Pods-SKPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		7643F4B31FE8CE7A00475F6E /* SKActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKActionView.swift; sourceTree = "<group>"; };
 		7643F4B51FE9F42F00475F6E /* SKPaginationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKPaginationView.swift; sourceTree = "<group>"; };
 		7643F4B81FEA4FCF00475F6E /* SKToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKToolbar.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB31FCCBE118E5C22F51940 /* Pods_SKPhotoBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +113,22 @@
 			name = extensions;
 			sourceTree = "<group>";
 		};
+		2384516F6071CC54786925D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D9E3EDFA5801613BCF732F3 /* Pods_SKPhotoBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8909B5261BC791280060A053 = {
 			isa = PBXGroup;
 			children = (
 				8909B5321BC791280060A053 /* SKPhotoBrowser */,
 				A64B89341CB04222000071B9 /* SKPhotoBrowserTests */,
 				8909B5311BC791280060A053 /* Products */,
+				A2F5CD13B188CC9A8A0BA999 /* Pods */,
+				2384516F6071CC54786925D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +171,15 @@
 			path = SKPhotoBrowser;
 			sourceTree = "<group>";
 		};
+		A2F5CD13B188CC9A8A0BA999 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				530656635D5ED077EB347446 /* Pods-SKPhotoBrowser.debug.xcconfig */,
+				3080ECCCE684D9E86CBCD28F /* Pods-SKPhotoBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A64B89341CB04222000071B9 /* SKPhotoBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8909B5381BC791280060A053 /* Build configuration list for PBXNativeTarget "SKPhotoBrowser" */;
 			buildPhases = (
+				EF4B9344B40B4DF6500651BE /* [CP] Check Pods Manifest.lock */,
 				8909B52B1BC791280060A053 /* Sources */,
 				8909B52C1BC791280060A053 /* Frameworks */,
 				8909B52D1BC791280060A053 /* Headers */,
@@ -286,6 +311,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		EF4B9344B40B4DF6500651BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SKPhotoBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -447,6 +494,7 @@
 		};
 		8909B5391BC791280060A053 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 530656635D5ED077EB347446 /* Pods-SKPhotoBrowser.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -469,6 +517,7 @@
 		};
 		8909B53A1BC791280060A053 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3080ECCCE684D9E86CBCD28F /* Pods-SKPhotoBrowser.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
