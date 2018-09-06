@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import VPKit
+import SKPhotoBrowser
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        configureVPKit()
+        print("started")
         return true
     }
 
@@ -39,6 +43,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
 
+    
+    func configureVPKit () {
+        let appId = "VEEPIO_by_url_test_app_id"
+        let clientId = "1zArpBErovQ1MjVHvigJqXwE8qt47U2Yy5XzG3CP"
+        let clientSecret = "VpLIvEetceUnHBEIf6fLUwLxELBh2QesZ6iLLiPHCesRLXfOLLJNcFfmp03wJfGaJquO3V8KqHjtvzlufuXfWWgcpWVw9wxfBJNYdZh96JHV5hk44dJbqiCqplrKcSml"
+        
+        /*
+         
+         INITIALISATION
+         
+         */
+//        SKVeepioOptions.clientId = clientId
+//        SKVeepioOptions.clientSecret = clientSecret
+//        SKVeepioOptions.appName = appId
+        
+        SKVeepioOptions.initialiseVPKit(clientId:clientId, clientSecret:clientSecret, appName:appId)
+       
+
+    }
+
+}
+
+extension SKPhotoBrowserOptions {
+    
 }
 

@@ -7,6 +7,19 @@
 //
 
 import UIKit
+import VPKit
+public struct SKVeepioOptions {
+    
+    public static func initialiseVPKit (clientId:String,
+                                 clientSecret:String,
+                                 appName:String) {
+        
+        VPKit.setApplicationId(appName,
+                               clientId: clientId,
+                               clientSecret: clientSecret)
+    }
+   
+}
 
 public struct SKPhotoBrowserOptions {
     public static var displayStatusbar: Bool = false
@@ -64,3 +77,8 @@ public struct SKToolbarOptions {
     public static var font: UIFont = .systemFont(ofSize: 17.0)
     public static var textShadowColor: UIColor = .black
 }
+
+
+
+    
+
