@@ -8,6 +8,7 @@
 
 import UIKit
 import SKPhotoBrowser
+import VPKit
 
 class FromLocalViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, SKPhotoBrowserDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -123,8 +124,13 @@ private extension FromLocalViewController {
     }
     
     func createLocalPhotos() -> [SKPhotoProtocol] {
+        
+        
         return (0..<10).map { (i: Int) -> SKPhotoProtocol in
-            let photo = SKPhoto.photoWithImage(UIImage(named: "image\(i%10).jpg")!)
+            let image = UIImage(named: "image\(i%10).jpg")!
+            let imageURL = URL(string: "https://raw.githubusercontent.com/veepionyc/VPKitDemo/master/VPKitDemoObjC/VPKitDemo/Assets.xcassets/stock_photo.imageset/photo-1468818461933-b1d79f62434e.jpg")!
+            let vpkImage = VPKImage.init(image: image, url:imageURL)
+            let photo = SKPhoto.photoWithImage(vpkImage)
             photo.caption = caption[i%10]
             return photo
         }
