@@ -1,6 +1,14 @@
 platform :ios, '9.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/veepionyc/Specs.git'
+
+
 use_frameworks!
 
 target "SKPhotoBrowserExample" do
     pod 'SDWebImage', '~>3.8'
+    pod 'VPKit' #, :path => '../../__frameworks/VPKit_7'
+    pod 'SKPhotoBrowser', :path => '../'
+
 end
