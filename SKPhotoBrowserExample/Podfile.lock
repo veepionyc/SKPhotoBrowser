@@ -1,30 +1,77 @@
 PODS:
+  - AWSCore (2.6.28)
+  - AWSKinesis (2.6.28):
+    - AWSCore (= 2.6.28)
+  - dotveep (1.3.5):
+    - dotveep/Messages (= 1.3.5)
+  - dotveep/Messages (1.3.5):
+    - Protobuf (= 3.4.0)
+  - Protobuf (3.4.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SKPhotoBrowser (5.1.0):
-    - VPKit (= 2.6.3)
-  - VPKit (2.6.3)
+    - VPKit (~> 2.6.1)
+  - VPKit (2.6.3):
+    - VPKit/Core (= 2.6.3)
+    - VPKit/Events (= 2.6.3)
+    - VPKit/Models (= 2.6.3)
+    - VPKit/Network (= 2.6.3)
+    - VPKit/Utils (= 2.6.3)
+    - VPKit/Video (= 2.6.3)
+    - VPKit/Views (= 2.6.3)
+  - VPKit/Core (2.6.3):
+    - VPKit/Network
+    - VPKit/Video
+  - VPKit/Events (2.6.3):
+    - AWSCore (~> 2.6.10)
+    - AWSKinesis (~> 2.6.10)
+    - VPKit/Utils
+  - VPKit/Models (2.6.3):
+    - dotveep (= 1.3.5)
+    - VPKit/Utils
+  - VPKit/Network (2.6.3):
+    - VPKit/Models
+  - VPKit/Utils (2.6.3)
+  - VPKit/Video (2.6.3):
+    - VPKit/Views
+    - XCDYouTubeKit (~> 2.5.6)
+  - VPKit/Views (2.6.3):
+    - VPKit/Events
+    - VPKit/Models
+  - XCDYouTubeKit (2.5.6)
 
 DEPENDENCIES:
   - SDWebImage (~> 3.8)
   - SKPhotoBrowser (from `../`)
-  - VPKit
+  - VPKit (from `../../../__frameworks/VPKit_7`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AWSCore
+    - AWSKinesis
+    - Protobuf
     - SDWebImage
-    - VPKit
+    - XCDYouTubeKit
+  https://github.com/veepionyc/Specs.git:
+    - dotveep
 
 EXTERNAL SOURCES:
   SKPhotoBrowser:
     :path: "../"
+  VPKit:
+    :path: "../../../__frameworks/VPKit_7"
 
 SPEC CHECKSUMS:
+  AWSCore: f75fcf5b2f4325da49ae1f7cb5484778d3b0acc6
+  AWSKinesis: f007c9e76c48bed90652fcfa40ae60f4630837b2
+  dotveep: 3bbbb014e43745e3815c413257c0d3e02f05b5b3
+  Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SKPhotoBrowser: 12ac7909f36e856622e7b329229ca1d0cf87d79f
-  VPKit: 8f771b5685a6e82352fea25c81d17e4b0a222215
+  SKPhotoBrowser: 56bc5ef0459be37b1ec147fc3abf77ddbc31195b
+  VPKit: eeac1ea080c655616a955c38152b5a4a99b7a306
+  XCDYouTubeKit: dccfe0c17dd5c5187969ec27e93069573badb08f
 
-PODFILE CHECKSUM: 6452708a1777ed5475751c375d278f641e9d320b
+PODFILE CHECKSUM: 27044fda54f2b66b486037088637d88109211721
 
 COCOAPODS: 1.5.3

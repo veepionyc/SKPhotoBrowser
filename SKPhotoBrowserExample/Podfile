@@ -8,7 +8,7 @@ use_frameworks!
 
 target "SKPhotoBrowserExample" do
     pod 'SDWebImage', '~>3.8'
-    pod 'VPKit' #, :path => '../../__frameworks/VPKit_7'
+    pod 'VPKit', :path => '../../../__frameworks/VPKit_7'
     pod 'SKPhotoBrowser', :path => '../'
 
 end
