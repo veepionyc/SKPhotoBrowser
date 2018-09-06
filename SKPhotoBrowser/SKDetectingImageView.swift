@@ -19,12 +19,12 @@ class SKDetectingImageView: VPKPreview {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setup()
+        //setup()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
+        //setup()
     }
     
     @objc func handleDoubleTap(_ recognizer: UITapGestureRecognizer) {
@@ -39,7 +39,7 @@ class SKDetectingImageView: VPKPreview {
 private extension SKDetectingImageView {
     func setup() {
         isUserInteractionEnabled = true
-        
+        useCache = false
         let doubleTap = UITapGestureRecognizer(target: self, action: #selector(handleDoubleTap(_:)))
         doubleTap.numberOfTapsRequired = 2
         addGestureRecognizer(doubleTap)

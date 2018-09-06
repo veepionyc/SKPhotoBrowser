@@ -59,7 +59,7 @@ open class SKZoomingScrollView: UIScrollView {
         
         // image
         imageView = SKDetectingImageView(frame: frame)
-        imageView.delegate = self
+        //imageView.skdelegate = self
         imageView.contentMode = .bottom
         imageView.backgroundColor = .clear
         addSubview(imageView)

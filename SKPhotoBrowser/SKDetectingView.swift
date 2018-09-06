@@ -26,8 +26,8 @@ class SKDetectingView: UIView {
             return
         }
         switch touch.tapCount {
-        case 1 : handleSingleTap(touch)
-        case 2 : handleDoubleTap(touch)
+        //case 1 : handleSingleTap(touch)
+        //case 2 : handleDoubleTap(touch)
         default: break
         }
     }
