@@ -26,8 +26,34 @@
 		8909B58B1BC792DC0060A053 /* image8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8909B57F1BC792DC0060A053 /* image8.jpg */; };
 		8909B58C1BC792DC0060A053 /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8909B5801BC792DC0060A053 /* image9.jpg */; };
 		89FC5DBB1D54A04900F1BE52 /* FromWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FC5DBA1D54A04900F1BE52 /* FromWebViewController.swift */; };
+		AB59DF80214310990020B212 /* SKPhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB59DF7A2143105E0020B212 /* SKPhotoBrowser.framework */; };
+		AB59DF81214310990020B212 /* SKPhotoBrowser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB59DF7A2143105E0020B212 /* SKPhotoBrowser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB55C74F2E19BE99A3DD28FF /* Pods_SKPhotoBrowserExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC185D4686B5554C11523E7C /* Pods_SKPhotoBrowserExample.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB59DF792143105E0020B212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB59DF742143105E0020B212 /* SKPhotoBrowser.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8909B5301BC791280060A053;
+			remoteInfo = SKPhotoBrowser;
+		};
+		AB59DF7B2143105E0020B212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB59DF742143105E0020B212 /* SKPhotoBrowser.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A64B89331CB04222000071B9;
+			remoteInfo = SKPhotoBrowserTests;
+		};
+		AB59DF82214310990020B212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB59DF742143105E0020B212 /* SKPhotoBrowser.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8909B52F1BC791280060A053;
+			remoteInfo = SKPhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A6A7B7841C9578E30025AC07 /* Embed Frameworks */ = {
@@ -36,6 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AB59DF81214310990020B212 /* SKPhotoBrowser.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +94,7 @@
 		8909B57F1BC792DC0060A053 /* image8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image8.jpg; sourceTree = "<group>"; };
 		8909B5801BC792DC0060A053 /* image9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image9.jpg; sourceTree = "<group>"; };
 		89FC5DBA1D54A04900F1BE52 /* FromWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromWebViewController.swift; sourceTree = "<group>"; };
+		AB59DF742143105E0020B212 /* SKPhotoBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SKPhotoBrowser.xcodeproj; path = ../SKPhotoBrowser.xcodeproj; sourceTree = "<group>"; };
 		FC185D4686B5554C11523E7C /* Pods_SKPhotoBrowserExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKPhotoBrowserExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB59DF80214310990020B212 /* SKPhotoBrowser.framework in Frameworks */,
 				EB55C74F2E19BE99A3DD28FF /* Pods_SKPhotoBrowserExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +114,7 @@
 		8909B54E1BC792150060A053 = {
 			isa = PBXGroup;
 			children = (
+				AB59DF742143105E0020B212 /* SKPhotoBrowser.xcodeproj */,
 				8909B5591BC792150060A053 /* SKPhotoBrowserExample */,
 				8909B5581BC792150060A053 /* Products */,
 				C646D2C27A5B9CCC003A9BD1 /* Frameworks */,
@@ -167,6 +197,15 @@
 			name = Info;
 			sourceTree = "<group>";
 		};
+		AB59DF752143105E0020B212 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB59DF7A2143105E0020B212 /* SKPhotoBrowser.framework */,
+				AB59DF7C2143105E0020B212 /* SKPhotoBrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B4C26A60DB67884C16989D8A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +241,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AB59DF83214310990020B212 /* PBXTargetDependency */,
 			);
 			name = SKPhotoBrowserExample;
 			productName = SKPhotoBrowserExample;
@@ -235,12 +275,35 @@
 			mainGroup = 8909B54E1BC792150060A053;
 			productRefGroup = 8909B5581BC792150060A053 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AB59DF752143105E0020B212 /* Products */;
+					ProjectRef = AB59DF742143105E0020B212 /* SKPhotoBrowser.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8909B5561BC792150060A053 /* SKPhotoBrowserExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AB59DF7A2143105E0020B212 /* SKPhotoBrowser.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SKPhotoBrowser.framework;
+			remoteRef = AB59DF792143105E0020B212 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB59DF7C2143105E0020B212 /* SKPhotoBrowserTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SKPhotoBrowserTests.xctest;
+			remoteRef = AB59DF7B2143105E0020B212 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8909B5551BC792150060A053 /* Resources */ = {
@@ -279,7 +342,6 @@
 				"${BUILT_PRODUCTS_DIR}/AWSKinesis/AWSKinesis.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/VPKit/VPKit.framework",
 				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit/XCDYouTubeKit.framework",
 				"${BUILT_PRODUCTS_DIR}/dotveep/dotveep.framework",
@@ -290,7 +352,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSKinesis.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VPKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCDYouTubeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/dotveep.framework",
@@ -333,6 +394,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB59DF83214310990020B212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SKPhotoBrowser;
+			targetProxy = AB59DF82214310990020B212 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8909B55E1BC792150060A053 /* Main.storyboard */ = {
