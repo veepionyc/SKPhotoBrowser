@@ -591,7 +591,7 @@ extension SKPhotoBrowser: UIScrollViewDelegate {
         guard !isPerformingLayout else { return }
         
         // tile page
-        pagingScrollView.tilePages()
+         pagingScrollView.tilePages()
         
         // Calculate current page
         let previousCurrentPage = currentPageIndex
