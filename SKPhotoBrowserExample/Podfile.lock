@@ -1,71 +1,18 @@
 PODS:
-  - AWSCore (2.6.28)
-  - AWSKinesis (2.6.28):
-    - AWSCore (= 2.6.28)
-  - dotveep (1.3.5):
-    - dotveep/Messages (= 1.3.5)
-  - dotveep/Messages (1.3.5):
-    - Protobuf (= 3.4.0)
-  - Protobuf (3.4.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - VPKit (2.6.4-beta2):
-    - VPKit/Core (= 2.6.4-beta2)
-    - VPKit/Events (= 2.6.4-beta2)
-    - VPKit/Models (= 2.6.4-beta2)
-    - VPKit/Network (= 2.6.4-beta2)
-    - VPKit/Utils (= 2.6.4-beta2)
-    - VPKit/Video (= 2.6.4-beta2)
-    - VPKit/Views (= 2.6.4-beta2)
-  - VPKit/Core (2.6.4-beta2):
-    - VPKit/Network
-    - VPKit/Video
-  - VPKit/Events (2.6.4-beta2):
-    - AWSCore (~> 2.6.10)
-    - AWSKinesis (~> 2.6.10)
-    - VPKit/Utils
-  - VPKit/Models (2.6.4-beta2):
-    - dotveep (= 1.3.5)
-    - VPKit/Utils
-  - VPKit/Network (2.6.4-beta2):
-    - VPKit/Models
-  - VPKit/Utils (2.6.4-beta2)
-  - VPKit/Video (2.6.4-beta2):
-    - VPKit/Views
-    - XCDYouTubeKit (~> 2.5.6)
-  - VPKit/Views (2.6.4-beta2):
-    - VPKit/Events
-    - VPKit/Models
-  - XCDYouTubeKit (2.5.6)
 
 DEPENDENCIES:
   - SDWebImage (~> 3.8)
-  - VPKit (from `../../../__frameworks/VPKit_7`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - AWSCore
-    - AWSKinesis
-    - Protobuf
     - SDWebImage
-    - XCDYouTubeKit
-  https://github.com/veepionyc/Specs.git:
-    - dotveep
-
-EXTERNAL SOURCES:
-  VPKit:
-    :path: "../../../__frameworks/VPKit_7"
 
 SPEC CHECKSUMS:
-  AWSCore: f75fcf5b2f4325da49ae1f7cb5484778d3b0acc6
-  AWSKinesis: f007c9e76c48bed90652fcfa40ae60f4630837b2
-  dotveep: 3bbbb014e43745e3815c413257c0d3e02f05b5b3
-  Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  VPKit: 45f270ba7bc99e31757ca2bf2db2a37271ee99d5
-  XCDYouTubeKit: dccfe0c17dd5c5187969ec27e93069573badb08f
 
-PODFILE CHECKSUM: 8c1e0520b620ef552f9a3c53abfe4cac6591de5d
+PODFILE CHECKSUM: 924c71c29056651376ef060cd31096a025a3dd5f
 
 COCOAPODS: 1.5.3

@@ -28,6 +28,8 @@
 		89FC5DBB1D54A04900F1BE52 /* FromWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FC5DBA1D54A04900F1BE52 /* FromWebViewController.swift */; };
 		AB59DF80214310990020B212 /* SKPhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB59DF7A2143105E0020B212 /* SKPhotoBrowser.framework */; };
 		AB59DF81214310990020B212 /* SKPhotoBrowser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB59DF7A2143105E0020B212 /* SKPhotoBrowser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABBA66E82147F81600BF85BA /* VPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBA66E52147F80C00BF85BA /* VPKit.framework */; };
+		ABBA66E92147F81600BF85BA /* VPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABBA66E52147F80C00BF85BA /* VPKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB55C74F2E19BE99A3DD28FF /* Pods_SKPhotoBrowserExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC185D4686B5554C11523E7C /* Pods_SKPhotoBrowserExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AB59DF81214310990020B212 /* SKPhotoBrowser.framework in Embed Frameworks */,
+				ABBA66E92147F81600BF85BA /* VPKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +98,7 @@
 		8909B5801BC792DC0060A053 /* image9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image9.jpg; sourceTree = "<group>"; };
 		89FC5DBA1D54A04900F1BE52 /* FromWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromWebViewController.swift; sourceTree = "<group>"; };
 		AB59DF742143105E0020B212 /* SKPhotoBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SKPhotoBrowser.xcodeproj; path = ../SKPhotoBrowser.xcodeproj; sourceTree = "<group>"; };
+		ABBA66E52147F80C00BF85BA /* VPKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VPKit.framework; sourceTree = "<group>"; };
 		FC185D4686B5554C11523E7C /* Pods_SKPhotoBrowserExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKPhotoBrowserExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB59DF80214310990020B212 /* SKPhotoBrowser.framework in Frameworks */,
+				ABBA66E82147F81600BF85BA /* VPKit.framework in Frameworks */,
 				EB55C74F2E19BE99A3DD28FF /* Pods_SKPhotoBrowserExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +119,7 @@
 		8909B54E1BC792150060A053 = {
 			isa = PBXGroup;
 			children = (
+				ABBA66E52147F80C00BF85BA /* VPKit.framework */,
 				AB59DF742143105E0020B212 /* SKPhotoBrowser.xcodeproj */,
 				8909B5591BC792150060A053 /* SKPhotoBrowserExample */,
 				8909B5581BC792150060A053 /* Products */,
@@ -338,23 +344,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SKPhotoBrowserExample/Pods-SKPhotoBrowserExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSKinesis/AWSKinesis.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/VPKit/VPKit.framework",
-				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit/XCDYouTubeKit.framework",
-				"${BUILT_PRODUCTS_DIR}/dotveep/dotveep.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSKinesis.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VPKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCDYouTubeKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/dotveep.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -519,6 +513,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 2Y9BM25FS4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SKPhotoBrowserExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keishi.suzuki.aSKPhotoBrowserExample;
@@ -535,6 +533,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 2Y9BM25FS4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SKPhotoBrowserExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keishi.suzuki.aSKPhotoBrowserExample;
